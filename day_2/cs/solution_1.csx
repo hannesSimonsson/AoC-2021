@@ -5,7 +5,6 @@ List<(string, int)> input = lines.Select(line =>
                                                      return (instruction[0], int.Parse(instruction[1]));
                                                  }).ToList();
 
-
 int depth = 0;
 int horizontal = 0;
 

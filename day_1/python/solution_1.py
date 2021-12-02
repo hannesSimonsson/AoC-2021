@@ -9,7 +9,6 @@ def parse_file(text_file):
 
 
 if __name__ == "__main__":
-
     input = parse_file("../input_1.txt")
 
     preDepth = input[0]
