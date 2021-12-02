@@ -1,6 +1,5 @@
 import solution_1 as parser
 
-
 input = parser.parse_file("../input_1.txt")  # [[string, int]]
 
 depth = 0
