@@ -1,9 +1,6 @@
-def parse_file(text_file):
-    f = open(text_file, "r")
-    input = []
-    for line in f:
-        input.append(int(line))
-    f.close()
+def parse_file(file):
+    with open(file) as f:
+        input = f.read().splitlines()
 
     return input
 

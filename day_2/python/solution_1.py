@@ -1,11 +1,7 @@
 def parse_file(file):
-    f = open(file, "r")
-    input = []
-    for line in f:
-        line = line.strip("\n")
-        commands, value = line.split(" ")
-        input.append([commands, int(value)])
-    f.close()
+    with open(file) as f:
+        input = [(line.split(" ")[0], int(line.split(" ")[1]))
+                 for line in f.read().splitlines()]
 
     return input
 
