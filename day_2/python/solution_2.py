@@ -1,7 +1,7 @@
 import solution_1 as parser
 
 input = parser.parse_file("../input_1.txt")  # [(string, int)]
-print(input)
+
 depth = 0
 horizontal = 0
 aim = 0
